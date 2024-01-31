@@ -1,7 +1,13 @@
 package hello.hellospring.domain;
 
+import jakarta.persistence.*;
+
+@Entity     // ORM
 public class Member {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)     // PK 전략을 맵핑
     private Long id;
+
+    //@Column(name = "name")
     private String name;
 
     public Long getId() {
