@@ -38,6 +38,12 @@
    - 인터페이스를 통한 기본적인 CRUD 제공
    - 스프링 데이터 JPA는 JPA를 편리하게 사용하도록 도와주는 기술이기에 JPA를 먼저 제대로 습득하는 것이 중요.
 
+# AOP
+
+AOP: Aspect Oriented Programming<br/>
+공통 관심 사항(cross-cutting concern)과 핵심 관심 사항(core concern)분리<br/>
+프록시를 사용<br/>
+
 # 강의
 
 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술 by 김영한
