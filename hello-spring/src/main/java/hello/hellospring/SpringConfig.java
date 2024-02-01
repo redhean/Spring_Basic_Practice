@@ -1,5 +1,6 @@
 package hello.hellospring;
 
+import hello.hellospring.aop.TimeTraceAop;
 import hello.hellospring.repository.*;
 import hello.hellospring.service.MemberService;
 import jakarta.persistence.EntityManager;
@@ -40,4 +41,14 @@ public class SpringConfig {
         //return new JpaMemberRepository(em);
         return null;
     }
+
+    /*
+    @Bean
+    public TimeTraceAop timeTraceAop() {
+        return new TimeTraceAop();
+    }
+
+    @Around의 범위가 TimeTraceAop를 포함하게 되면 순환 참조 오류가 발생한다.
+    @Component를 사용하거나 범위를 TimeTraceAop가 포함되지 않도록 조정
+     */
 }
